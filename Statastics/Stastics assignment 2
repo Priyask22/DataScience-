@@ -1,0 +1,167 @@
+                                 STASTICS BASIC ASSIGNMENT     
+                                      
+Q.1> What are the three measures of central tendency?
+
+The three central tendency measures are:
+
+Mean: The mean is the average of a set of values. It is calculated by summing all the values in a dataset and then dividing the sum by the total number of values.
+
+Median: The median is the middle value in a dataset when the values are arranged in ascending or descending order. If the dataset has an even number of values, the median is calculated by taking the average of the two middle values.
+
+Mode: The mode is the value that appears most frequently in a dataset. If there are multiple values that appear with the same frequency, then the dataset is said to have multiple modes.
+
+Q.2> What is the difference between the mean, median, and mode ? How they used to measure the central tendency of a dataset?
+The mean, median, and mode are all measures of central tendency, but they differ in how they represent the center of a dataset.
+
+The mean is the arithmetic average of a set of values. It is calculated by adding up all the values in the dataset and dividing by the total number of values. The mean is sensitive to extreme values, which means that a few unusually high or low values can significantly impact the mean.
+
+The median is the middle value in a dataset when the values are arranged in order from smallest to largest. If there is an even number of values, the median is the average of the two middle values. The median is a good measure of central tendency when the dataset contains extreme values or outliers, as it is not affected by these values.
+
+The mode is the value that appears most frequently in a dataset. A dataset can have more than one mode if there are multiple values that appear with the same frequency. The mode is a good measure of central tendency for categorical data or discrete variables.
+
+To measure the central tendency of a dataset, you can use any of these measures depending on the nature of the data and the research question you are trying to answer. The mean is commonly used for continuous variables that are normally distributed, while the median is often used for skewed data or when outliers are present. The mode is useful for categorical data or when you want to know the most common value in a dataset.
+
+Q.3> Q3. Measure the three measures of central tendency for the given height data:
+[178,177,176,177,178.2,178,175,179,180,175,178.9,176.2,177,172.5,178,176.5]
+
+# importing statistics module
+import statistics 
+
+# creating the height data list
+height_data = [178,177,176,177,178.2,178,175,179,180,175,178.9,176.2,177,172.5,178,176.5]
+
+# calculating the mean
+mean_height = statistics.mean(height_data)
+print("Mean height is:", mean_height)
+
+# calculating the median
+median_height = statistics.median(height_data)
+print("Median height is:", median_height)
+
+# calculating the mode
+mode_height = statistics.mode(height_data)
+print("Mode height is:", mode_height)
+Mean height is: 177.01875
+Median height is: 177.0
+Mode height is: 178
+Q.4> Find the standard deviation for the given data:
+[178,177,176,177,178.2,178,175,179,180,175,178.9,176.2,177,172.5,178,176.5]
+
+# importing statistics module
+import statistics
+
+# creating the height data list
+height_data = [178,177,176,177,178.2,178,175,179,180,175,178.9,176.2,177,172.5,178,176.5]
+
+# calculating the standard deviation
+std_height = statistics.stdev(height_data)
+print("Standard deviation of height data is:", std_height)
+Standard deviation of height data is: 1.8472389305844188
+
+Q.5> How are measures of dispersion such as range, variance, and standard deviation used to describe the spread of a dataset? Provide an example.
+
+Measures of dispersion such as range, variance, and standard deviation are used to describe the spread or variability of a dataset. They give an idea of how spread out the data points are from the central tendency.
+
+Range: The range is the difference between the maximum and minimum values in a dataset. It gives a rough estimate of the spread of the data. For example, if we have a dataset of test scores with a range of 40, we can say that the scores are spread out over a range of 40 points.
+
+Variance: The variance is the average of the squared differences from the mean. It measures how much the data points deviate from the mean. A higher variance indicates a greater spread of the data. For example, if we have a dataset of the heights of students in a class with a variance of 4, we can say that the heights of the students are spread out over a range of 2 cm on either side of the mean.
+
+Standard deviation: The standard deviation is the square root of the variance. It measures the spread of the data in the same units as the original data. A higher standard deviation indicates a greater spread of the data. For example, if we have a dataset of the weights of apples in a basket with a standard deviation of 2 kg, we can say that the weights of the apples are spread out over a range of 4 kg on either side of the mean.
+
+As an example, consider the following dataset of test scores:
+
+[85, 90, 75, 80, 95, 70, 85, 90, 80, 75]
+
+The mean score is 82, and we can calculate the measures of dispersion as follows:
+
+Range: The range is the difference between the maximum and minimum values, which is 25 (95 - 70). Variance: The variance is the average of the squared differences from the mean, which is 62.5. Standard deviation: The standard deviation is the square root of the variance, which is approximately 7.91.
+
+Q.6> What is a Venn diagram?
+A Venn diagram is a visual representation of the relationships between sets of data. It is a diagram that shows all possible logical relations between a finite collection of sets, often represented as circles that overlap or are disjoint. Venn diagrams are commonly used to illustrate simple set relationships in logic, statistics, probability, and computer science.
+
+In a Venn diagram, each circle represents a set, and the region where the circles overlap represents the intersection of those sets. The areas outside the circles represent the complement of those sets.
+
+Q7. For the two given sets A = (2,3,4,5,6,7) & B = (0,2,6,8,10).Find:
+(i) A ⋂ B (ii) A ⋃ B
+# define the sets A and B
+A = {2, 3, 4, 5, 6, 7}
+B = {0, 2, 6, 8, 10}
+
+# find the intersection of A and B
+intersection = A.intersection(B)
+print("Intersection of A and B:", intersection)
+
+# find the union of A and B
+union = A.union(B)
+print("Union of A and B:", union)
+Intersection of A and B: {2, 6}
+Union of A and B: {0, 2, 3, 4, 5, 6, 7, 8, 10}
+Q8. What do you understand about skewness in data?
+In statistics, skewness is a measure of the asymmetry of a probability distribution. Skewness refers to the degree to which the data is not symmetrically distributed around the mean. It indicates whether the data is skewed to the left or to the right of the mean.
+
+If a distribution is symmetrical, then it has zero skewness. If the tail of the distribution is longer on the right side than on the left side, then the distribution is said to be positively skewed, and it has a positive skewness. On the other hand, if the tail of the distribution is longer on the left side than on the right side, then the distribution is said to be negatively skewed, and it has a negative skewness.
+
+Q9. If a data is right skewed then what will be the position of median with respect to mean?
+If a data set is right-skewed, it means that the tail of the distribution is longer on the right side, and the data is concentrated on the left side of the distribution. In this case, the mean is greater than the median.
+
+To understand why this is the case, consider a right-skewed distribution like income. In this distribution, there are a small number of individuals who earn very high incomes, which pull the mean to the right. However, most people earn lower incomes, so the median is not as affected by the high earners and remains closer to the center of the distribution.
+
+Therefore, the median will be to the left of the mean in a right-skewed distribution.
+
+Q10. Explain the difference between covariance and correlation. How are these measures used in statistical analysis?
+Covariance and correlation are two statistical measures that are used to quantify the relationship between two variables.
+
+Covariance is a measure of how two variables vary together. It measures the degree to which two variables are linearly related. A positive covariance indicates that the two variables move in the same direction, while a negative covariance indicates that they move in opposite directions. However, the magnitude of covariance does not have a standardized scale and it can be affected by the scale of the variables being measured.
+
+Correlation, on the other hand, is a measure of the strength and direction of the linear relationship between two variables. Correlation ranges from -1 to +1, where -1 indicates a perfect negative correlation, 0 indicates no correlation, and +1 indicates a perfect positive correlation. Correlation is standardized, which means that it is not affected by the scale of the variables being measured.
+
+In statistical analysis, covariance and correlation are used to assess the relationship between two variables. They help to identify patterns and trends in the data, and to determine the strength and direction of the relationship between the variables. They are also used to test hypotheses and to make predictions about the behavior of the variables.
+
+Q11. What is the formula for calculating the sample mean? Provide an example calculation for a dataset.
+The formula for calculating the sample mean is:
+
+Sample Mean = (Sum of all observations) / (Number of observations) In other words, the sample mean is calculated by adding up all the values in a sample and dividing by the number of observations in the sample.
+
+Here is an example calculation:
+
+Suppose we have the following dataset: [4, 7, 9, 12, 15]
+
+To calculate the sample mean, we add up all the values and divide by the number of observations:
+
+Sample Mean = (4 + 7 + 9 + 12 + 15) / 5 = 47 / 5 = 9.4
+
+Therefore, the sample mean for this dataset is 9.4.
+
+Q12. For a normal distribution data what is the relationship between its measure of central tendency?
+For a normal distribution, the measures of central tendency, namely the mean, median, and mode, are all equal. In other words, they have the same value.
+
+This is because a normal distribution is a symmetric distribution, with equal amounts of data on both sides of the mean. The median, which is the middle value of the dataset, is also the same as the mean in a normal distribution.
+
+Additionally, the mode, which is the value that occurs most frequently in the dataset, is also equal to the mean and median in a normal distribution.
+
+Therefore, for a normal distribution, the mean, median, and mode are all the same value, and they all represent the center or midpoint of the distribution.
+
+Q13. How is covariance different from correlation?
+Covariance and correlation are both statistical measures that describe the relationship between two variables, but they differ in several important ways.
+
+Range: The range of covariance is unbounded, which means it can take on any value. In contrast, the range of correlation is between -1 and +1.
+
+Standardization: Covariance is not standardized, which means it is affected by the scale of the variables being measured. Correlation, on the other hand, is standardized, which means it is not affected by the scale of the variables.
+
+Interpretation: Covariance measures the direction and strength of the linear relationship between two variables. A positive covariance indicates a positive relationship between the variables, while a negative covariance indicates a negative relationship. However, it does not provide any information about the strength of the relationship. Correlation, on the other hand, provides information about both the direction and strength of the linear relationship between two variables.
+
+Units: Covariance is measured in units that are the product of the units of the two variables being measured. Correlation is unitless.
+
+Q14. How do outliers affect measures of central tendency and dispersion? Provide an example.
+
+Outliers are data points that are significantly different from other observations in a dataset. Outliers can have a significant impact on measures of central tendency and dispersion.
+
+Measures of central tendency, such as the mean, are affected by outliers because they are calculated using all the data points in the dataset. If there are outliers present, they can significantly pull the mean in one direction or another, causing it to be an inaccurate representation of the center of the dataset.
+
+For example, suppose we have the following dataset: [2, 3, 4, 5, 6, 7, 100]. The mean of this dataset is (2+3+4+5+6+7+100) / 7 = 18.43. However, the outlier value of 100 is significantly larger than all the other values in the dataset, which makes the mean an inaccurate representation of the center of the dataset.
+
+Outliers can also affect measures of dispersion, such as the range, variance, and standard deviation. Outliers can increase the range of the dataset, which makes it difficult to interpret the spread of the data. Outliers can also increase the variance and standard deviation, which makes the spread of the data appear larger than it actually is.
+
+For example, suppose we have the following dataset: [2, 3, 4, 5, 6, 7, 100]. The range of this dataset is 98, which makes the spread of the data appear much larger than it actually is. The variance of this dataset is 1372.8, which is also significantly larger than it would be if the outlier were not present.
+
+ 
